@@ -98,7 +98,7 @@ $(document).ready(function() { //when document is ready
         });
     });
 
-/*========== CLIENTS CAROUSEL 
+/*========== CLIENTS CAROUSEL   
 
 $(document).ready(function(){ //when document is ready
   $("#clients-slider").owlCarousel({ //owlCarousel settings
