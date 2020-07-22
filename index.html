@@ -1,389 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hash Table</title>
-    <link rel="shortcut icon" href="img/favicon.png" />
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/lightbox.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.css" />
-    <link rel="stylesheet" href="css/arrow.css" />
-    <link rel="stylesheet" href="css/fixed.css" />
-    <link rel="stylesheet" href="css/waypoints.css" />
-  </head>
 
-  <body data-spy="scroll" data-target="#navbarResponsive">
-    <!--- Start Home section -->
-    <div id="home">
-      <!--- Navigation -->
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="color: #1ebba3;">Hash table</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-          >
-            <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
-          </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hash Table</title>
+  <link rel="shortcut icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/lightbox.css" />
+  <link rel="stylesheet" href="css/owl.carousel.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.css" />
+  <link rel="stylesheet" href="css/arrow.css" />
+  <link rel="stylesheet" href="css/fixed.css" />
+  <link rel="stylesheet" href="css/waypoints.css" />
+</head>
 
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#definition">Definition</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#hash-function">Hash Function</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#operation">Operation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#separate_chaining">Separate Chaining</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#open-addressing">Open addressing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#application">Applications</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="visualgo.html"
-                  >Simulator</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!--- End Navigation -->
+<body data-spy="scroll" data-target="#navbarResponsive">
+  <!--- Start Home section -->
+  <div id="home">
+    <!--- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: #1ebba3;">Hash table</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
 
-      <!--- Video Background -->
-      <div class="video-background">
-        <div class="video-wrap">
-          <div id="video">
-            <video id="bgvid" playsinline autoplay muted loop>
-              <source src="typing.mp4" type="video/mp4">
-              <source src="typing.webm" type="video/webm">
-            </video>
-          </div>
-          <!--- End Video ID -->
-        </div>
-        <!--- End Video Wrap -->
-      </div>
-
-      <!--- End Video Background -->
-
-      <!--- Start Landing Page Image -->
-      <div class="landing">
-        <div class="home-wrap">
-          <div class="home-inner"></div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#definition">Definition</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hash-function">Hash Function</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#operation">Operation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#separate_chaining">Separate Chaining</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#open-addressing">Open addressing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#application">Applications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="visualgo.html">Simulator</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!--- End Landing Page Image -->
+    </nav>
+    <!--- End Navigation -->
 
-      <!--- Start Landing Page Caption -->
-      <div class="caption text-center">
-        <div class="os-animation" data-animation="bounceInUp" data-delay=".6s">
-          <h1>Hash Table</h1>
+    <!--- Video Background -->
+    <div class="video-background">
+      <div class="video-wrap">
+        <div id="video">
+          <video id="bgvid" playsinline autoplay muted loop>
+            <source src="typing.mp4" type="video/mp4">
+            <source src="typing.webm" type="video/webm">
+          </video>
         </div>
-
-        <div class="os-animation" data-animation="bounceInUp" data-delay=".8s">
-          <a class="btn btn-outline-light btn-lg" href="#definition"
-            >Get Started</a
-          >
-        </div>
+        <!--- End Video ID -->
       </div>
-
-      <!--- Bouncing Down Arrow -->
-      <a class="down-arrow" href="#definition">
-        <div class="arrow bounce d-none d-md-block">
-          <i class="fas fa-angle-down" aria-hidden="true"></i>
-        </div>
-      </a>
+      <!--- End Video Wrap -->
     </div>
-  
-    <!--- End Home Section -->
 
-    <!--- Start Features Section -->
-    
+    <!--- End Video Background -->
 
-      <!--- Start Jumbotron -->
-      <div class="jumbotron" id ="definition">
-        <div class="narrow">
-          <div class="os-animation" data-animation="fadeInUp">
-            <h3 class="heading">Definition</h3>
-            <div class="heading-underline"></div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-6 col-md-3">
-              <div class="os-animation" data-animation="fadeInLeft">
-                <div class="feature">
-                  <span class="fa-layers fa-4x">
-                    <i class="fas fa-table"></i>
-                    
-                  </span>
-                  <p>
-                    Hash table is the data structure that used to store entries
-                    (key-value pairs) for storing and retrieving information
-                    quickly.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-              <div class="os-animation" data-animation="fadeInUp">
-                <div class="feature">
-                  <span class="fa-layers fa-4x">
-                    <i class="fab fa-searchengin"></i>
-
-                  </span>
-                  <p>
-                    Hash table offers a combination of efficient lookup,
-                    insertion, deletion operations O(1).
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-              <div class="os-animation" data-animation="fadeInRight">
-                <div class="feature">
-                  <span class="fa-layers fa-4x">
-                    <i class="fab fa-bitbucket"></i>
-                  
-                  </span>
-                  <p>
-                    It utilizes a hash function to compute an index into an
-                    array of buckets, where entries can be found or inserted.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-              <div class="os-animation" data-animation="fadeInLeft">
-                <div class="feature">
-                  <span class="fa-layers fa-4x">
-                    <i class="fa fa-circle"></i>
-                    <i
-                      class="fas fa-angle-double-down fa-inverse"
-                      data-fa-transform="shrink-5.5 down-.3"
-                    ></i>
-                  </span>
-                  <!-- <h3>Parallax Scrolling</h3> -->
-                  <p>
-                    Use hash function that converts a non-integer key into a
-                    non-negative integer key.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            
-          </div>
-          <!--- End Row -->
-        </div>
-        <!--- End Narrow -->
+    <!--- Start Landing Page Image -->
+    <div class="landing">
+      <div class="home-wrap">
+        <div class="home-inner"></div>
       </div>
-      <!--- End Jumbotron -->
-
-      <!--- Start Fixed Background IMG Dark -->
-      <div class="fixed-background" id="hash-function">
-        <div class="row dark">
-          <div class="col-12 os-animation" data-animation="fadeInUp">
-            <h3 class="heading">Hash Function</h3>
-            <div class="heading-underline"></div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="os-animation" data-animation="fadeInLeft">
-              <h3>The hash function is used to transform <span style="color: #00ffff;">the key</span> into <span style="color: #00ffff;">the index</span></h3>
-              
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="os-animation" data-animation="fadeInUp">
-              <h3>For <span style="color: #1ebba3;">numeric </span>key </h3>
-              <div class="feature">
-                
-              </div>
-              <p class="lead">Divide the key by the size of available array, <span style="color: #00ffff;">array_size</span>, and take <span style="color: #00ffff;">the remainer.</span></p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="os-animation" data-animation="fadeInRight">
-              <h3>For <span style="color: #1ebba3;">alphanumeric </span>key</h3>
-              <div class="feature">
-                <!-- <span class="fa-layers fa-3x">
-                  <i class="fab fa-css3"></i>
-                </span> -->
-              </div>
-              <p class="lead">Divide <span style="color: #00ffff;">sum of (ASCII codes) of characters</span> by size of available array, and take <span style="color: #00ffff;">the remainer</span>.</p>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="os-animation" data-animation="bounceInUp" data-delay=".8s">
-              <a class="btn btn-outline-light btn-lg" href="#operation">How does it work ?</a>
-            </div>
-            
-          </div>
-          
-        <!-- End of Row Dark-->
-
-        <div class="fixed-wrap">
-          <div id="fixed"></div>
-        </div>
-      </div>
-      <!--- End Fixed Background IMG Dark-->
     </div>
-    <!--- End of Features Section -->
+    <!--- End Landing Page Image -->
 
-    <!--- Start Portfolio Section -->
-    <div id="hash-function" class="offset">
-      <div class="row padding">
-        <div class="col-12 os-animation" data-animation="fadeInUp">
-          <h3 class="heading">Choosing a hash function</h3>
-          <div class="heading-underline"></div>
-        </div>
+    <!--- Start Landing Page Caption -->
+    <div class="caption text-center">
+      <div class="os-animation" data-animation="bounceInUp" data-delay=".6s">
+        <h1>Hash Table</h1>
       </div>
-      <!--- End Row -->
+
+      <div class="os-animation" data-animation="bounceInUp" data-delay=".8s">
+        <a class="btn btn-outline-light btn-lg" href="#definition">Get Started</a>
+      </div>
+    </div>
+
+    <!--- Bouncing Down Arrow -->
+    <a class="down-arrow" href="#definition">
+      <div class="arrow bounce d-none d-md-block">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </div>
+    </a>
+  </div>
+
+  <!--- End Home Section -->
+
+  <!--- Start Features Section -->
+
+
+  <!--- Start Jumbotron -->
+  <div class="jumbotron" id="definition">
+    <div class="narrow">
+      <div class="os-animation" data-animation="fadeInUp">
+        <h3 class="heading">Definition</h3>
+        <div class="heading-underline"></div>
+      </div>
 
       <div class="row">
-        <div class="col-sm-6 col-md-6">
+        <div class="col-sm-6 col-md-3">
+          <div class="os-animation" data-animation="fadeInLeft">
+            <div class="feature">
+              <span class="fa-layers fa-4x">
+                <i class="fas fa-table"></i>
+
+              </span>
+              <p>
+                Hash table is the data structure that used to store entries
+                (key-value pairs) for storing and retrieving information
+                quickly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="os-animation" data-animation="fadeInUp">
+            <div class="feature">
+              <span class="fa-layers fa-4x">
+                <i class="fab fa-searchengin"></i>
+
+              </span>
+              <p>
+                Hash table offers a combination of efficient lookup,
+                insertion, deletion operations O(1).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="os-animation" data-animation="fadeInRight">
+            <div class="feature">
+              <span class="fa-layers fa-4x">
+                <i class="fab fa-bitbucket"></i>
+
+              </span>
+              <p>
+                It utilizes a hash function to compute an index into an
+                array of buckets, where entries can be found or inserted.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
           <div class="os-animation" data-animation="fadeInLeft">
             <div class="feature">
               <span class="fa-layers fa-4x">
                 <i class="fa fa-circle"></i>
-                <i
-                  class="fas fa-mobile-alt fa-inverse"
-                  data-fa-transform="shrink-6 right-.25"
-                ></i>
+                <i class="fas fa-angle-double-down fa-inverse" data-fa-transform="shrink-5.5 down-.3"></i>
               </span>
-              <h3>Quick computation</h3>
+              <!-- <h3>Parallax Scrolling</h3> -->
               <p>
-                Computing hash value should be quick (constant time).
+                Use hash function that converts a non-integer key into a
+                non-negative integer key.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-6 col-md-6">
-          <div class="os-animation" data-animation="fadeInRight">
-            <div class="feature">
-              <span class="fa-layers fa-4x">
-                <i class="fa fa-circle"></i>
-                <i
-                  class="fas fa-desktop fa-inverse"
-                  data-fa-transform="shrink-8 left-1."
-                ></i>
-              </span>
-              <h3>Handling Hash collision</h3>
-              <p>
-                Less hash collision which is a situation that occurs when two
-                keys have identical hash values.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-sm-6 col-md-6">
-          <div class="os-animation" data-animation="fadeInLeft">
-            <div class="feature">
-              <span class="fa-layers fa-4x">
-                <i class="fa fa-circle"></i>
-                <i
-                  class="fas fa-play fa-inverse"
-                  data-fa-transform="shrink-.5 right-1.3"
-                ></i>
-              </span>
-              <h3>Uniform distribution</h3>
-              <p>
-                A good hash function should distribute the keys uniformly into
-                the slots in the table.
-              </p>
-            </div>
-          </div>
-        </div>
+      </div>
+      <!--- End Row -->
+    </div>
+    <!--- End Narrow -->
+  </div>
+  <!--- End Jumbotron -->
 
-        <div class="col-sm-6 col-md-6">
-          <div class="os-animation" data-animation="fadeInRight">
-            <div class="feature">
-              <span class="fa-layers fa-4x">
-                <i class="fa fa-circle"></i>
-                <i
-                  class="fas fa-angle-double-down fa-inverse"
-                  data-fa-transform="shrink-5.5 down-.3"
-                ></i>
-              </span>
-              <h3>Perfect hash function</h3>
-              <p>
-                A hash function that map each key into a unique bucket is
-                referred as a perfect hash function.
-              </p>
-            </div>
-          </div>
+  <!--- Start Fixed Background IMG Dark -->
+  <div class="fixed-background" id="hash-function">
+    <div class="row dark">
+      <div class="col-12 os-animation" data-animation="fadeInUp">
+        <h3 class="heading">Hash Function</h3>
+        <div class="heading-underline"></div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="os-animation" data-animation="fadeInLeft">
+          <h3>The hash function is used to transform <span style="color: #00ffff;">the key</span> into <span
+              style="color: #00ffff;">the index</span></h3>
+
         </div>
       </div>
+
+      <div class="col-md-4">
+        <div class="os-animation" data-animation="fadeInUp">
+          <h3>For <span style="color: #1ebba3;">numeric </span>key </h3>
+          <div class="feature">
+
+          </div>
+          <p class="lead">Divide the key by the size of available array, <span
+              style="color: #00ffff;">array_size</span>, and take <span style="color: #00ffff;">the remainer.</span></p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="os-animation" data-animation="fadeInRight">
+          <h3>For <span style="color: #1ebba3;">alphanumeric </span>key</h3>
+          <div class="feature">
+            <!-- <span class="fa-layers fa-3x">
+                  <i class="fab fa-css3"></i>
+                </span> -->
+          </div>
+          <p class="lead">Divide <span style="color: #00ffff;">sum of (ASCII codes) of characters</span> by size of
+            available array, and take <span style="color: #00ffff;">the remainer</span>.</p>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="os-animation" data-animation="bounceInUp" data-delay=".8s">
+          <a class="btn btn-outline-light btn-lg" href="#operation">How does it work ?</a>
+        </div>
+
+      </div>
+
+      <!-- End of Row Dark-->
+
+      <div class="fixed-wrap">
+        <div id="fixed"></div>
+      </div>
+    </div>
+    <!--- End Fixed Background IMG Dark-->
+  </div>
+  <!--- End of Features Section -->
+
+  <!--- Start Portfolio Section -->
+  <div id="hash-function" class="offset">
+    <div class="row padding">
+      <div class="col-12 os-animation" data-animation="fadeInUp">
+        <h3 class="heading">Choosing a hash function</h3>
+        <div class="heading-underline"></div>
+      </div>
+    </div>
+    <!--- End Row -->
+
+    <div class="row">
       <div class="col-sm-6 col-md-6">
         <div class="os-animation" data-animation="fadeInLeft">
           <div class="feature">
             <span class="fa-layers fa-4x">
               <i class="fa fa-circle"></i>
-              <i class="fas fa-angle-double-down fa-inverse" data-fa-transform="shrink-5.5 down-.3"></i>
+              <i class="fas fa-mobile-alt fa-inverse" data-fa-transform="shrink-6 right-.25"></i>
             </span>
-            <h3>Hash value</h3>
+            <h3>Quick computation</h3>
             <p>
-              A hash function returns positive integer value which is called a
-              hash code.
+              Computing hash value should be quick (constant time).
             </p>
           </div>
         </div>
       </div>
-      </div>
-      <!--- End Container -->
-      <!--- End Portfolio Grid -->
 
-      
-    <!--- End of Portfolio Section -->
-
-    <div id="operation" class="offset">
-      <!--- Start Jumbotron -->
-      <div class="jumbotron">
-        <div class="narrow">
-          <div class="os-animation" data-animation="fadeInUp">
-            <h3 class="heading">How does hash table work</h3>
-            <div class="heading-underline"></div>
+      <div class="col-sm-6 col-md-6">
+        <div class="os-animation" data-animation="fadeInRight">
+          <div class="feature">
+            <span class="fa-layers fa-4x">
+              <i class="fa fa-circle"></i>
+              <i class="fas fa-desktop fa-inverse" data-fa-transform="shrink-8 left-1."></i>
+            </span>
+            <h3>Handling Hash collision</h3>
+            <p>
+              Less hash collision which is a situation that occurs when two
+              keys have identical hash values.
+            </p>
           </div>
-          <div class="col">
-           <div class="os-animation" data-animation="fadeInLeft">
-          <p style="font-size: 1.3rem;"><br>&#8226; In hashing, keys are converted into fixed-size integers by using hash function. The idea of hasing
-          is <span style="color: #1ebba3;">to distribute entries (key/value pairs) uniformly across an array of bucket.</span></br>
-          
-          </br>&#8226; Hashing is implemented in two steps:</br>
-          +A key is converted into an integer by using a <a href="#hash-function" style="color: #1ebba3; text-decoration: underline;">hash function</a>.</br>
-          +The key is stored in the hash table where it can be quickly retrieved using hashed key.
-          <span style="color: #1ebba3;"> index = key % array_size;</span>
-          </br>
-        </br>
-          &#8226; Hence, the key is reduced to an index with range from 0 to array_size – 1 by using<span style="color: #1ebba3;"> the modulo operator(%)</span> .By using that key, you are able to quickly access the element in O(1) time.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-6">
+        <div class="os-animation" data-animation="fadeInLeft">
+          <div class="feature">
+            <span class="fa-layers fa-4x">
+              <i class="fa fa-circle"></i>
+              <i class="fas fa-play fa-inverse" data-fa-transform="shrink-.5 right-1.3"></i>
+            </span>
+            <h3>Uniform distribution</h3>
+            <p>
+              A good hash function should distribute the keys uniformly into
+              the slots in the table.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-6">
+        <div class="os-animation" data-animation="fadeInRight">
+          <div class="feature">
+            <span class="fa-layers fa-4x">
+              <i class="fa fa-circle"></i>
+              <i class="fas fa-angle-double-down fa-inverse" data-fa-transform="shrink-5.5 down-.3"></i>
+            </span>
+            <h3>Perfect hash function</h3>
+            <p>
+              A hash function that map each key into a unique bucket is
+              referred as a perfect hash function.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-6">
+      <div class="os-animation" data-animation="fadeInLeft">
+        <div class="feature">
+          <span class="fa-layers fa-4x">
+            <i class="fa fa-circle"></i>
+            <i class="fas fa-angle-double-down fa-inverse" data-fa-transform="shrink-5.5 down-.3"></i>
+          </span>
+          <h3>Hash value</h3>
+          <p>
+            A hash function returns positive integer value which is called a
+            hash code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- End Container -->
+  <!--- End Portfolio Grid -->
+
+
+  <!--- End of Portfolio Section -->
+
+  <div id="operation" class="offset">
+    <!--- Start Jumbotron -->
+    <div class="jumbotron">
+      <div class="narrow">
+        <div class="os-animation" data-animation="fadeInUp">
+          <h3 class="heading">How does hash table work</h3>
+          <div class="heading-underline"></div>
+        </div>
+        <div class="col">
+          <div class="os-animation" data-animation="fadeInLeft">
+            <p style="font-size: 1.3rem;"><br>&#8226; In hashing, keys are converted into fixed-size integers by using
+              hash function. The idea of hasing
+              is <span style="color: #1ebba3;">to distribute entries (key/value pairs) uniformly across an array of
+                bucket.</span></br>
+
+              </br>&#8226; Hashing is implemented in two steps:</br>
+              +A key is converted into an integer by using a <a href="#hash-function"
+                style="color: #1ebba3; text-decoration: underline;">hash function</a>.</br>
+              +The key is stored in the hash table where it can be quickly retrieved using hashed key.
+              <span style="color: #1ebba3;"> index = key % array_size;</span>
+              </br>
+              </br>
+              &#8226; Hence, the key is reduced to an index with range from 0 to array_size – 1 by using<span
+                style="color: #1ebba3;"> the modulo operator(%)</span> .By using that key, you are able to quickly
+              access the element in O(1) time.</p>
           </div>
         </div>
         <div class="col">
           <div class="os-animation" data-animation="fadeInRight">
-          <img src="img/numericEx.png" width="700" height="350" class="center">
-          <h3 style="text-align: center">For <span style="color: #1ebba3;">numeric </span>key </h3>
+            <img src="img/numericEx.png" width="700" height="350" class="center">
+            <h3 style="text-align: center">For <span style="color: #1ebba3;">numeric </span>key </h3>
           </div>
         </div>
         <div class="col">
@@ -392,145 +378,157 @@
             <h3 style="text-align: center">For <span style="color: #1ebba3;">alphanumeric </span>key </h3>
 
           </div>
-          
+
         </div>
-          
-          </div>
-        </div>
+
       </div>
-    
+    </div>
+  </div>
 
-    <!--- Start Team Section -->
-    <div id="separate_chaining" class="offset">
-      <!--- Start Fixed Background IMG Light -->
-      <div class="fixed-background">
-        <div class="row light">
-          <div class="col-12 os-animation" data-animation="fadeInUp">
-            <h3 class="heading" style="color: white">Separate chaining</h3>
-            <div class="heading-underline"></div>
-          </div>
-          <!-- <div id="team-slider"> -->
 
-          <div class="col-6" data-animation="fadeInLeft">
-            <div class="os-animation" data-animation="fadeInLeft">
+  <!--- Start Team Section -->
+  <div id="separate_chaining" class="offset">
+    <!--- Start Fixed Background IMG Light -->
+    <div class="fixed-background">
+      <div class="row light">
+        <div class="col-12 os-animation" data-animation="fadeInUp">
+          <h3 class="heading" style="color: white">Separate chaining</h3>
+          <div class="heading-underline"></div>
+        </div>
+        <!-- <div id="team-slider"> -->
+
+        <div class="col-md-6" data-animation="fadeInLeft">
+          <div class="os-animation" data-animation="fadeInLeft">
             <p style="font-size: 1.3rem; color: white;">
-              &#8226; Separate chaining is a method which is utilized to <span style="color: #00ffff;">handle hash collision</span>.</br>
-              <br> &#8226;Technically, Hash table in separate chaining is usually implemented with the aid of <span style="color: #00ffff;">linked list</span>.</br></br>
+              &#8226; Separate chaining is a method which is utilized to <span style="color: #00ffff;">handle hash
+                collision</span>.</br>
+              <br> &#8226;Technically, Hash table in separate chaining is usually implemented with the aid of <span
+                style="color: #00ffff;">linked list</span>.</br></br>
               &#8226; Each bucket of the hash table contains a collection of entries.</br></br>
               &#8226; Each bucket points to a linked list of entries.</br></br>
-              &#8226; To look up an entry, you find its bucket and then walk the list until you find an entry with the matching key.</br></br>
-              &#8226; For separate chaining, the worst case scenario is when all the entries are <span style="color: #00ffff;">inserted into the same linked list</span> => the lookup procedure may have to scan all its entries and time complexity would be O(n).
+              &#8226; To look up an entry, you find its bucket and then walk the list until you find an entry with the
+              matching key.</br></br>
+              &#8226; For separate chaining, the worst case scenario is when all the entries are <span
+                style="color: #00ffff;">inserted into the same linked list</span> => the lookup procedure may have to
+              scan all its entries and time complexity would be O(n).
             </p>
-            </div>
           </div>
+        </div>
 
-          <div class="col-6"">
-            <div class="os-animation" data-animation="fadeInRight">
-              <p>
+        <div class="col-md-6">
+          <div class="os-animation" data-animation="fadeInRight">
+            <p>
               <img src="img/Separate_chaining.png" width="700" height="350" class="center">
             </p>
-          </div>  
           </div>
+        </div>
 
-              <!-- </div> -->
-              <!--- End Team Slider -->
-            </div>
-            <!--- End Animation -->
-            <div class="fixed-wrap">
-              <div id="fixed-2"></div>
-            </div>
+        <!-- </div> -->
+        <!--- End Team Slider -->
       </div>
-          <!--- End col-md-12 -->
-        <!--- End of Row Light -->
+      <!--- End Animation -->
+      <div class="fixed-wrap">
+        <div id="fixed-2"></div>
+      </div>
+    </div>
+    <!--- End col-md-12 -->
+    <!--- End of Row Light -->
 
-        
-      
-      <!--- End Fixed Background IMG Light -->
-    
+
+
+    <!--- End Fixed Background IMG Light -->
+
     <!--- End Team Section -->
 
     <!--- Start Skills Section -->
 
     <div class="fixed-background" id="open-addressing">
-    <div class="row dank">
-      <div class="col-12 os-animation" data-animation="fadeInUp">
-        <h3 class="heading">Open addressing</h3>
-        <div class="heading-underline"></div>
-        <p style="text-align: center;">&#8251; In open adressing, all the data go inside the table.</br>
-            &#8251; Size of the table must be <span style="color: #00ffff;">greater than or equal to</span> the total number of keys
-          <br>&#8251; There are <span style="color: #00ffff;">three</span> common collision resolution strategies</br>
-        </p>
-      </div>
-
-      <div class="col-md-6 ">
-        <div  class ="os-animation" data-animation="fadeInLeft">
-        <h3 class="heading" style="color:aqua;">Linear Probing</h3>
-        <p style="font-size: 1.3rem;">We scan forwards one index at a time for the next empty/deleted slot (wrapping around when we have reached the last
-          slot) whenever there is a collision.
-        </p>
-        </div>
-        
-      </div>
-      <div class="col-md-6" >
-        <div class = "os-animation" data-animation="fadeInRight">
-          <img src="img/linear_probing.png" width="700" height="450" class="center">
-        </div>
-      </div>
-
-      <div class="col-md-6 ">
-        <div class="os-animation" data-animation="fadeInLeft">
-          <h3 class="heading" style="color:aqua;">Quadratic Probing</h3>
-          <!-- <div class="heading-underline"></div> -->
-          <p style="font-size: 1.3rem;"> &#8226; We look for <span style="color: #00ffff;">i<sup>2</sup>th</span> slot in <span
-              style="color: #00ffff;">i'th</span> iteration if the given hash vale x collides in the hash table.</br></br>
-            &#8226; Let <span style="color: #00ffff;">hash(x)</span> be the slot index computed using the hash function.</br>
-            + If the slot hash(x) % S is full, then we try (hash(x) + 1*1) % S.</br>
-            + If (hash(x) + 1*1) % S is also full, then we try (hash(x) + 2*2) % S.</br>
-            + If (hash(x) + 2*2) % S is also full, then we try (hash(x) + 3*3) % S.</br>
-            + This process is repeated for all the values of i until an empty slot is found.
+      <div class="row dank">
+        <div class="col-12 os-animation" data-animation="fadeInUp">
+          <h3 class="heading">Open addressing</h3>
+          <div class="heading-underline"></div>
+          <p style="text-align: center;">&#8251; In open adressing, all the data go inside the table.</br>
+            &#8251; Size of the table must be <span style="color: #00ffff;">greater than or equal to</span> the total
+            number of keys
+            <br>&#8251; There are <span style="color: #00ffff;">three</span> common collision resolution strategies</br>
           </p>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="os-animation" data-animation="fadeInRight">
-          <img src="img/quadratic_probing.png" width="700" height="350" class="center">
-        </div>
-      </div>
-    
 
-      <div class="col-md-6 ">
-        <div class="os-animation" data-animation="fadeInLeft">
-          <h3 class="heading" style="color:aqua;">Double Hashing</h3>
-          <!-- <div class="heading-underline"></div> -->
-          <p style="font-size: 1.3rem;">&#8226; Double hashing uses the idea of applying a second hash function to key when a collision occurs</br>
-            &#8226; First hash function is typically <span style="color: #00ffff;">hash1(key) = key % TABLE_SIZE</span></br>
-          &#8226; A popular second hash function is : <span style="color: #00ffff;">hash2(key) = PRIME – (key % PRIME)</span>  where PRIME is an arbitrary prime number which is smaller than theTABLE_SIZE.</br>
-            &#8226; There are a couple of requirements for the second function:</br>
-            
-            + It must never evaluate to 0</br>
-            + Must make sure that all cells can be probed
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="os-animation" data-animation="fadeInRight">
-          <img src="img/double_hashing.png" width="700" height="400" class="center">
-        </div>
-      </div>
-      
-    </div>
-   
-          <!-- End of Row Dark-->
-          
-        
-
-          <div class="fixed-wrap">
-            <div id="fixed-2"></div>
+        <div class="col-md-6 ">
+          <div class="os-animation" data-animation="fadeInLeft">
+            <h3 class="heading" style="color:aqua;">Linear Probing</h3>
+            <p style="font-size: 1.3rem;">We scan forwards one index at a time for the next empty/deleted slot (wrapping
+              around when we have reached the last
+              slot) whenever there is a collision.
+            </p>
           </div>
+
+        </div>
+        <div class="col-md-6">
+          <div class="os-animation" data-animation="fadeInRight">
+            <img src="img/linear_probing.png" width="700" height="450" class="center">
+          </div>
+        </div>
+
+        <div class="col-md-6 ">
+          <div class="os-animation" data-animation="fadeInLeft">
+            <h3 class="heading" style="color:aqua;">Quadratic Probing</h3>
+            <!-- <div class="heading-underline"></div> -->
+            <p style="font-size: 1.3rem;"> &#8226; We look for <span style="color: #00ffff;">i<sup>2</sup>th</span> slot
+              in <span style="color: #00ffff;">i'th</span> iteration if the given hash vale x collides in the hash
+              table.</br></br>
+              &#8226; Let <span style="color: #00ffff;">hash(x)</span> be the slot index computed using the hash
+              function.</br>
+              + If the slot hash(x) % S is full, then we try (hash(x) + 1*1) % S.</br>
+              + If (hash(x) + 1*1) % S is also full, then we try (hash(x) + 2*2) % S.</br>
+              + If (hash(x) + 2*2) % S is also full, then we try (hash(x) + 3*3) % S.</br>
+              + This process is repeated for all the values of i until an empty slot is found.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="os-animation" data-animation="fadeInRight">
+            <img src="img/quadratic_probing.png" width="700" height="350" class="center">
+          </div>
+        </div>
+
+
+        <div class="col-md-6 ">
+          <div class="os-animation" data-animation="fadeInLeft">
+            <h3 class="heading" style="color:aqua;">Double Hashing</h3>
+            <!-- <div class="heading-underline"></div> -->
+            <p style="font-size: 1.3rem;">&#8226; Double hashing uses the idea of applying a second hash function to key
+              when a collision occurs</br>
+              &#8226; First hash function is typically <span style="color: #00ffff;">hash1(key) = key %
+                TABLE_SIZE</span></br>
+              &#8226; A popular second hash function is : <span style="color: #00ffff;">hash2(key) = PRIME – (key %
+                PRIME)</span> where PRIME is an arbitrary prime number which is smaller than theTABLE_SIZE.</br>
+              &#8226; There are a couple of requirements for the second function:</br>
+
+              + It must never evaluate to 0</br>
+              + Must make sure that all cells can be probed
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="os-animation" data-animation="fadeInRight">
+            <img src="img/double_hashing.png" width="700" height="400" class="center">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- End of Row Dark-->
+
+
+
+      <div class="fixed-wrap">
+        <div id="fixed-2"></div>
+      </div>
     </div>
 
-        <!--- End Narrow -->
-      <!--- End Jumbotron -->
+    <!--- End Narrow -->
+    <!--- End Jumbotron -->
     <!--- End of Skills Section -->
 
     <div class="fixed-background" id="application">
@@ -539,29 +537,34 @@
           <h3 class="heading">Applications</h3>
           <div class="heading-underline"></div>
         </div>
-    <div class="col-12 os-animation" data-animation="fadeInUp">
-      <p style="font-size: 1.3rem;">&#8251; Associative arrays: Hash tables are commonly used to implement many types of in-memory tables. They are used to
-        implement associative arrays (arrays whose indices are arbitrary strings or other complicated objects).</br></br>
-        &#8251; Database indexing: Hash tables may also be used as disk-based data structures and database indices (such as in
-        dbm).</br></br>
-        &#8251; Caches: Hash tables can be used to implement caches i.e. auxiliary data tables that are used to speed up the access to
-        data, which is primarily stored in slower media.</br></br>
-      &#8251; Object representation: Several dynamic languages, such as Perl, Python, JavaScript, and Ruby use hash tables to
-        implement objects.</br></br>
-        &#8251; Hash Functions are used in various algorithms to make their computing faster</p>
-    </div>
-            
-          
-    
+        <div class="col-12 os-animation" data-animation="fadeInUp">
+          <p style="font-size: 1.3rem;">&#8251; Associative arrays: Hash tables are commonly used to implement many
+            types of in-memory tables. They are used to
+            implement associative arrays (arrays whose indices are arbitrary strings or other complicated
+            objects).</br></br>
+            &#8251; Database indexing: Hash tables may also be used as disk-based data structures and database indices
+            (such as in
+            dbm).</br></br>
+            &#8251; Caches: Hash tables can be used to implement caches i.e. auxiliary data tables that are used to
+            speed up the access to
+            data, which is primarily stored in slower media.</br></br>
+            &#8251; Object representation: Several dynamic languages, such as Perl, Python, JavaScript, and Ruby use
+            hash tables to
+            implement objects.</br></br>
+            &#8251; Hash Functions are used in various algorithms to make their computing faster</p>
         </div>
-    
-        <!-- End of Row Dark-->
-    
-        <div class="fixed-wrap">
-          <div id="fixed"></div>
-        </div>
+
+
+
       </div>
-      <!--- End Fixed Background IMG Dark-->
+
+      <!-- End of Row Dark-->
+
+      <div class="fixed-wrap">
+        <div id="fixed"></div>
+      </div>
+    </div>
+    <!--- End Fixed Background IMG Dark-->
     <!--- End of Features Section -->
 
     <!--- Top Scroll -->
@@ -583,5 +586,6 @@
     <script src="js/validator.js"></script>
     <script src="js/contact.js"></script>
     <!--- End of Script Source Files -->
-  </body>
+</body>
+
 </html>
